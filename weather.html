@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<title>Beijing: La capital del nuevo imperio</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
+  integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+  crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"
+  integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
+  crossorigin=""></script>
+<link href="https://fonts.googleapis.com/css?family=Dosis:400,500,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-6 py-5">
+            <h1>Beijing</h1>
+			<h2>La capital del nuevo imperio</h2>
+            <p class="bajada">También conocida como Pekín o Pequín (literalmente "la ciudad del norte") es uno de los cuatro municipios que, junto con las veintidós provincias, cinco regiones autónomas y dos regiones administrativas especiales, conforman la República Popular China, y su capital.</p>
+        </div>
+        <div class="col-sm-6 py-5">
+            <div id="mapid"></div>
+        </div>
+        <div class="col-sm-12 ">
+            <h2>Ubicación</h2>
+			<img src="http://i.pinimg.com/564x/e4/84/a1/e484a1676cce6869fd7d3ab5819234ef.jpg">
+            <br>
+            <br>
+            <p>Situada en la periferia de la antigua civilización china, Pekín se convirtió en el baluarte de las potencias extranjeras que ocuparon China del Norte entre los siglos X y XII. La dinastía Liao estableció aquí su capital meridional, la más acreditada de las cinco del reino. La dinastía Jin, la siguiente dinastía "bárbara" emprendió un amplio proyecto urbanístico a imagen de la capital de los Song septentrionales, Kaifeng. En 1215 los mongoles arrasaron la ciudad, pero 50 años después Kublai Kan decidió edificar en ella la nueva capital.</p>
+
+            <p>En la zona centro-sur del trazado hipodámico se hallaba la colosal villa imperial que contenía el complejo de palacios imperiales. El emperador Yongle, el tercer Ming, decidió trasladar la capitalidad a Pekín. Las murallas del lado septentrional fueron trasladadas más hacia el Sur para que el complejo palaciego imperial, la llamada Ciudad Prohibida, quedase exactamente en el centro del plano. Así la estructura del nuevo Pekín representa la cima del urbanismo tradicional chino, basado en la organización introducida por los mongoles así como en la estructura de los palacios imperiales de Kaifeng y Nankín además de tomar en consideración las normas de la geomancia china (風水).</p>
+			
+ 
+            <h2>Historia</h2>
+            <p>Existen vestigios de asentamientos humanos en el entorno de Pekín desde al menos el año 1000 a. C. En la ciudad de Ji, cercana al actual Pekín, estuvo situada la capital del Estado de Yan, uno de los estados del periodo de los Reinos Combatientes. En todo caso, no se conoce la ubicación exacta de la ciudad de Ji, abandonada en el siglo VI.</p>
+
+            <p>Durante las grandes dinastías Tang y Song, solamente existían pequeñas aldeas en la zona. La dinastía Song perdió gran parte de su territorio en el norte, incluyendo Pekín, ante las conquistas de la nueva dinastía Liao en el siglo X. Los Liao fundaron una segunda capital en la ciudad a la que llamaron Nanjing ("capital del Sur"). La dinastía Jin conquistaría más adelante Liao y el norte de China, renombrando la ciudad como Zhongdu (中都), o "capital central".</p>
+            <p>Los invasores mongoles fundaron la dinastía Yuan cuando conquistaron China, arrasando Zhongdu en 1215 y reconstruyéndola como la Gran Capital (大都), al norte de la capital Jin, siendo éste el comienzo de la ciudad actual de Pekín. Los relatos de Marco Polo aluden a la ciudad como Cambaluc. Kublai Kan, el primer emperador Yuan, estableció su capital en la actual Pekín por estar más próxima a su base de poder en Mongolia, lo cual realzó la importancia de la ciudad a pesar de que estuviera en el límite norte de China.</p>
+            <p>La dinastía Ming, que derrocó a los mongoles, estableció en un principio la capital en Nankín; pero en 1403, el tercer emperador Ming, Yǒnglè (永樂), que había accedido al trono tras matar a su sobrino al final de una larga lucha por el poder, trasladó la capital de nuevo a Pekín. La Ciudad Prohibida fue construida entre 1406 y 1420, seguida del Templo del Cielo (1420), y otros proyectos. La Puerta de Tian'anmen, fue quemada dos veces durante la dinastía Ming y se reconstruyó finalmente en 1651. Pekín se convirtió en la ciudad más poblada del mundo en el siglo XV cuando ya tenía 1 000 000 de habitantes, y siguió siendo la ciudad más poblada hasta el siglo XlX.</p>
+            <p>La historia de Pekín o Beijing está íntimamente unida a la de China, habiendo sido su capital durante gran parte de su historia. La zona donde se encuentra Beijing ya era habitada durante el neolítico, como se demostró tras encontrar un homo erectus al que se llamó “Hombre de Pekín”, siendo este uno de los eslabones más antiguos de la evolución humana hallados hasta ahora. La ciudad de Pekín nació con el nombre de Ji o Ki, hacia el siglo VIII a. C. Siglos después sufrió las guerras producidas durante la época de los Reinos Combatientes en los siglos V y III a.C. El primer gobernante que unificó China, básicamente reglando la escritura de caracteres chinos, fue Qinshi Huangdi, empezando con él la dinastía Qin. Tras él, en el 206 a. C. Los rebeldes, liderados por Liu Bang, se hizo con el poder y empezó la dinastía Han: que marcó el alma china. Tras los Han durante un corto periodo llegaron los Sui, tras un convulso tiempo de ocupación de los bárbaros de las estepas. Seguidamente llegaron los Tang (618 d. C.-907d. C.) que marcaron la época de mayor crecimiento cultural y artístico.</p></div>
+            <img src="http://upload.wikimedia.org/wikipedia/commons/d/dd/Beijing_montage.png">
+            <br>
+            <br>
+            <p>La República de China estableció su capital en Nankín y Pekín fue renombrada Beiping. Durante la Segunda Guerra Sino-Japonesa, fue ocupada por Japón el 29 de julio de 1937. Durante la ocupación, Pekín fue la capital del comité ejecutivo del norte de China, un estado títere que gobernó el norte de la China ocupada. La ocupación duró hasta la rendición de Japón, el 15 de agosto de 1945.</p>
+            <p>El 31 de enero de 1949, durante la Guerra Civil China, las fuerzas comunistas entraron en Pekín sin acciones violentas. El 1 de octubre de ese año, el líder del Partido Comunista de China Mao Zedong, proclamó en la Plaza de Tian'anmen la nueva República Popular China.</p>
+            <p>Tras las reformas económicas de Deng Xiaoping, el área urbana se ha ampliado enormemente. Guomao se ha convertido en un área comercial, Wangfujing y Xidan se han transformados en distritos de compras, mientras que Zhongguancun se ha convertido en el centro de la electrónica china.</p>
+            <p>Como capital de la nación, Pekín ha sido también el escenario de protestas y acontecimientos políticos, como las protestas del 4 de mayo de 1919, que darían lugar al Movimiento del Cuatro de Mayo, la proclamación de la República Popular el 1 de octubre de 1949, el incidente de Tian'anmen de 1976, cuando se produjeron numerosas protestas en recuerdo del fallecido primer ministro Zhou Enlai y, más recientemente, las protestas de la Plaza de Tian'anmen en 1989, que terminaron siendo sofocadas de manera violenta mediante la intervención del ejército el 4 de junio, en una de las acciones más controvertidas de la historia de la República Popular China. La plaza también ha sido el lugar de protestas de seguidores de Falun Gong.</p>
+            <p>En años recientes, Pekín ha sufrido las consecuencias de la rápida urbanización, en ámbitos como la congestión de la circulación, la contaminación del aire, la destrucción del patrimonio histórico y la llegada masiva de inmigrantes de otras partes del país.</p><br>
+            
+        <img src="http://static2.elespectador.com/files/images/1df476c7039c29092cdadd2ce7bf83aa.jpg">
+    
+ 
+            
+		<div class="col-sm-12" style="border-top:1px solid #eee;">
+			<div class="row pt-3 pb-4 small">
+				<div class="col-sm-3">
+					<p><a href="index.html">Volver</a></p>
+				</div>
+				<div class="col-sm-9  text-right">
+					<p>Seminario Gráfica Computacional I 2018, Primer Semestre → Clase 2 → Primera Evaluación → Viernes 23 de marzo</p>
+				</div>
+			</div>		
+		</div>
+	</div>
+</div>
+<script>
+    var urlStart = "http://api.openweathermap.org/data/2.5/weather";
+    var urlCityID = 1816670;
+    var urlUnit="metric";
+    var urlApiKey="f63ffabf9ac83f1700fd2de0b20d0ba7";
+    var url = urlStart + "?id=" + urlCityID + "&units=" + urlUnit + "&appid=" + urlApiKey;
+    
+    
+    
+var request = new XMLHttpRequest();
+request.open('GET', url, true);
+request.onload = function () {
+  var data = JSON.parse(this.response);
+  var lat = data.coord.lat;
+  var lon = data.coord.lon;
+  var ciudad = data.name;
+  var humedad = data.main.humidity;
+  var temperatura = Math.round(data.main.temp);
+
+  console.log(data);
+  console.log(lat);
+  console.log(lon);
+  console.log(ciudad);
+  console.log(humedad + "%");
+  console.log(temperatura + "º C");
+    
+   
+    
+  //mapa
+	var mymap = L.map('mapid').setView([lat, lon], 15);
+	L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+		maxZoom: 20,
+		attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' + 'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+		id: 'mapbox.streets'
+	}).addTo(mymap);
+	L.marker([lat, lon]).addTo(mymap)
+	.bindPopup("<h5>"+ ciudad + "</h5><p>Hay " + temperatura + "ºC, con " + humedad + "% de humedad<p>").openPopup();
+}
+request.send();
+</script>
+</body>
+</html>
+
+
+
